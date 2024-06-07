@@ -114,4 +114,26 @@ Math.ceil(Math.random() * 10000);
 // Handling user input
 1200 + '250';
 1200 + Number('250');
-  
+
+// String concatenation
+const firstname = 'Charles';
+const lastname = 'Adu-Sarkodie';
+firstname + ' ' + lastname;
+
+// Template literal
+`${firstname} ${lastname}`;
+
+// String methods Length
+firstname.length;
+lastname.length;
+`${firstname} ${lastname}`.length;
+
+// String method UpperCase
+firstname.toUpperCase();
+
+// String method CharAt
+lastname.charAt(0);
+`${firstname.trim().charAt(0)}${lastname.trim().charAt()}`;
+
+// String conversion
+String(2014);
