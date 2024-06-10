@@ -137,3 +137,40 @@ lastname.charAt(0);
 
 // String conversion
 String(2014);
+
+// Write a function that will add a participant to our Google Classroom
+
+function signup(name , group) {
+  if (name == 'Charles' && group == 'Alpha') {
+    return 'User added to Google Classroom';
+  } else if (name != 'Charles') {
+    return 'Not a Student!';}
+}
+
+// Invoking function
+signup ('Charles', 'Alpha');
+
+// Write a function that will add a participant to our Google Classroom
+
+const participants = [];
+function addParticipant(email) {
+  // check if email was provided
+  if (!email) {
+    return 'Email not provided!';
+  }
+  // check if email is valid
+  if (!email.includes ('@')) {
+    return 'Invalid email provided!';
+  }
+  // Add email to the participants
+  participants.push(email);
+  // Notify them via mail
+  // return response
+  return 'Participant added!';
+}
+
+addParticipant('char@gmail.com');
+
+
+const alphabets = ['A', 'B','C','D'];
+alphabets.join (' ').split(' ');
