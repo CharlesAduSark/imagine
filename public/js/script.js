@@ -174,3 +174,43 @@ addParticipant('char@gmail.com');
 
 const alphabets = ['A', 'B','C','D'];
 alphabets.join (' ').split(' ');
+
+
+// Write a function that will take a user with firstname and lastname and return fullname
+
+const user = {
+  firstname: 'Nana',
+  lastname: 'Adu'
+}
+function fullname(user) {
+  return {
+    ...user,
+    fullanme: `${user.firstname} ${user.lastname}`
+  }
+}
+
+fullname(user);
+
+// Array map
+const users = [
+  {firstname: 'Linda' , lastname: 'Parker'},
+  {firstname: 'Mark' , lastname: 'Adu'},
+  {firstname: 'Nana' , lastname: 'Kwesi'},
+  {firstname: 'Naa' , lastname: 'Zoe'},
+  {firstname: 'Kweku' , lastname: 'Osei'},
+]
+
+users.map(fullname);
+
+// Map and return squares of numbers
+function square(number) {
+ return number ** 2;
+}
+const numbers = [0,1,2,3,4,5]
+numbers.map(square);
+
+// Filter and return even numbers
+function even(number) {
+  return number % 2==0;
+}
+numbers.filter(even);
