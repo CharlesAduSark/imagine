@@ -246,3 +246,23 @@ function birthdayGreeting() {
 }
 
 birthdayGreeting();
+
+// Bottle class
+class Bottle {
+  constructor(color, shape, volume) {
+    this.color = color ;
+    this.shape = shape;
+    this.volume = volume;
+  }
+
+getInfo() {
+  return `This is a ${this.color} ${this.shape} bottle with a capacity of ${this.volume}ml`;
+  }
+}
+
+const bottle1 = new Bottle('black', 'circle', 300);
+bottle1.getInfo();
+
+const bottle2 = new Bottle('white', 'square', 100);
+bottle2.getInfo();
+
